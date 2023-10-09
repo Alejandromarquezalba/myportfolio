@@ -135,6 +135,7 @@
 .about_information{
     margin: 55px 100px;
     font-size: 20px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
 }
 .about_knowledge{
     margin-top: 150px;
@@ -198,6 +199,9 @@
 .navbar_m{
     margin: 0px 10px;
 }
+.active_m{
+    text-shadow: 100px;
+}
 @media (max-width: 992px){
     .container_icon{
         display: none;
@@ -205,6 +209,10 @@
     }
     .responsive_nav{
         display: block;
+    }
+    
+    .flex_contain{
+        margin-top: 25px;
     }
 }
 
