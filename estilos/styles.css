@@ -14,12 +14,17 @@
 }
 .container_icon{
     display: flex;
-    height: 116;
     background-color: rgb(255, 255, 255);
     box-sizing: border-box;
+    padding: 0px;
+}
+.container_icon ul{
+    padding: 0px;
 }
 .main_title{
-    padding: 5px 0px 0px 120px;
+    margin: auto;
+    padding: 0px 0px 60px 0px;
+    margin-right: 40px;
     font-size: 45px;
     color: brown;
 }
@@ -182,11 +187,24 @@
     background-color: rgb(236, 243, 255);
     border-radius: 15px;
 }
-/*------------Media queries-------------*/
 
+/*------------Media queries-------------*/
+.responsive_nav{
+    display: none;
+}
+.icon_mobile_portfolio{
+    margin: 5px 20px;
+}
+.navbar_m{
+    margin: 0px 10px;
+}
 @media (max-width: 992px){
     .container_icon{
+        display: none;
         background-color: blue;
+    }
+    .responsive_nav{
+        display: block;
     }
 }
 
