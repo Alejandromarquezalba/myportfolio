@@ -28,6 +28,15 @@
     font-size: 45px;
     color: brown;
 }
+
+.mobile_myportfolio_title{
+    font-size: 25px;
+    transition: 0.5s;
+    color: rgb(86, 103, 129);
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 /*------------------------flex--------------------------*/
 .flex_contain{
     display: flex;
@@ -110,6 +119,9 @@
 .textodepag5 {
     color: white;
 }
+.flex_about img{
+    filter: drop-shadow(10px 10px 15px black);
+}
 .body_pagina5{
     background-color: rgb(162, 174, 241);
 }
@@ -117,7 +129,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
 }
-/*------------about------------*/
+/*---------------Sobre mi---------------*/
 .espacio_en_blanco{
     background-color: gray;
 }
@@ -127,10 +139,10 @@
     margin: 50px 125px;
 }
 .flex_about h1{
-
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
-    padding: 70px
+    padding: 70px 0px 0px 55px;
+
 }
 .about_information{
     margin: 55px 100px;
@@ -166,6 +178,9 @@
     grid-area: about_img3;
     background-color: green;
 }
+.nav-item_paddingleft{
+    margin-left: 90px;
+}
 /*-------------proyectos------------*/
 .projects_title{
     display: flex;
@@ -199,9 +214,39 @@
 .navbar_m{
     margin: 0px 10px;
 }
-.active_m{
-    text-shadow: 100px;
+.nav-link_whitechange{
+    color: rgb(86, 103, 129);
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
 }
+.selected{
+    color:rgb(86, 103, 129);
+    font-weight: 700;
+}
+.selected:hover{
+    color: black;
+    font-weight: 700;
+    transition: 0.2s;
+}
+.no_selected{
+    color: rgb(86, 103, 129);
+    font-weight: 400;
+}
+.no_selected:hover{
+    color:rgb(35, 42, 53);
+    font-weight: 400;
+    transition: 0.075s;
+}
+
+
+
+
+.container_fluid_colorchange{
+    background-color: rgb(236, 243, 255);
+    border: 3px solid rgb(86, 103, 129);
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
 @media (max-width: 992px){
     .container_icon{
         display: none;
@@ -210,7 +255,7 @@
     .responsive_nav{
         display: block;
     }
-    
+
     .flex_contain{
         margin-top: 25px;
     }
