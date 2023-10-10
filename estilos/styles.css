@@ -243,16 +243,16 @@
     justify-content: space-around;
     gap: 25px;
 }
-.location_content div p{
+.location_text{
     background-color: blue;
-    font-size: 25px;
+    font-size: 20px;
     width: 25rem;
     height: 35rem;
     padding: 20px;
     border: 3px solid rgb(86, 103, 129);
     background-color: rgb(236, 243, 255);
     border-radius: 10px;
-
+    overflow:auto;
 }
 .location_content div iframe{
     width: 25rem;
@@ -355,6 +355,16 @@
     }
     .extra_item{
         display: block;
+    }
+    /*------------------------Location--------------------------*/
+    .location_text{
+        font-size: 20px;
+        width: 50%;
+        padding: 10px;
+        overflow:scroll;
+    }
+    .location_content div iframe{
+        width: 50%;
     }
     /*------------------------Change boots--------------------------*/
     .responsive_nav{
