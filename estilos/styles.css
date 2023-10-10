@@ -214,6 +214,11 @@
 .navbar_m{
     margin: 0px 10px;
 }
+.button_border_m{
+    border: 2px solid rgb(86, 103, 129);
+    border-radius: 15px;
+}
+
 .nav-link_whitechange{
     color: rgb(86, 103, 129);
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
@@ -258,6 +263,16 @@
 
     .flex_contain{
         margin-top: 25px;
+    }
+    .flexitem_1{
+        justify-content: center;
+    }
+    .flexitem_2{
+        margin-top: 50px;
+    }
+    .flex_contain{
+        display: inline-block;
+        justify-content: center;
     }
 }
 
