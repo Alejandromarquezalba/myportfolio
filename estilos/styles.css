@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
+/*------------------------Index--------------------------*/
 .text_index {
     font-size: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,8 +13,8 @@
     float: left;
 }
 .container_icon{
+    height: 150px;
     display: flex;
-    background-color: rgb(255, 255, 255);
     box-sizing: border-box;
     padding: 0px;
 }
@@ -22,11 +22,8 @@
     padding: 0px;
 }
 .main_title{
-    margin: auto;
-    padding: 0px 0px 60px 0px;
-    margin-right: 40px;
-    font-size: 45px;
-    color: brown;
+    padding: 15px 0px 0px 100px;
+    
 }
 
 .mobile_myportfolio_title{
@@ -36,72 +33,6 @@
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-/*------------------------flex--------------------------*/
-.flex_contain{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.flexitem_1{
-    margin-left: 60px;
-    border: 3px solid rgb(86, 103, 129);
-    background-color: rgb(236, 243, 255);
-    width: 520px;
-    height: 250px;
-    border-radius: 25px 25px 0 0;
-    padding: 10px;
-    box-sizing: border-box;
-}
-.flexitem_2{
-    display: flex;
-    justify-content: center;
-    margin-right: 60px;
-    padding: 5px;
-    border: 3px solid rgb(86, 103, 129);
-    background-color: rgb(236, 243, 255);
-    width: 340px;
-    height: 250px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    object-fit: contain;
-}
-
-.flexitem_3{
-    margin-left: 50px;
-    margin-top: 20px;
-    display: flex;
-
-    border: 3px solid rgb(86, 103, 129);
-    background-color: rgb(236, 243, 255);
-    padding: 10px;
-    width: 660px;
-    height: 175px;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-.flexitem_4{
-    margin-right: 55px;
-    margin-top: 20px;
-    border: 3px solid rgb(86, 103, 129);
-    background-color: rgb(236, 243, 255);
-    width: 200px;
-    height: 120px;
-    border-radius: 15px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-.flexitem_btn{
-    display: inline;
-    background-color: rgb(186, 128, 240);
-    box-sizing: border-box;
-}
-/*-----------------------------------------------------*/
-.img_icon{
-    padding: 5px;
-    margin: 20px;
-    box-sizing: border-box;
-}
 .footer_contact{
     display: flex;
     padding: 20px;
@@ -109,27 +40,113 @@
     margin: 80px auto;
     gap: 75px;
     width: 80%;
-    border: 3px solid rgb(86, 103, 129);
+    border: 2px solid rgb(86, 103, 129);
     background-color: rgb(236, 243, 255);
     border-radius: 15px;
     box-sizing: border-box;
 }
+.img_icon{
+    padding: 5px;
+    margin: 20px;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+.img_icon:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
 
-/*----------------other pages----------------*/
-.textodepag5 {
-    color: white;
+
+
+
+/*------------------------Index flex--------------------------*/
+.flex_contain{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.flex_about img{
-    filter: drop-shadow(10px 10px 15px black);
+.flexitem_1{
+    margin-left: 60px;
+    border: 2px solid rgb(86, 103, 129);
+    background-color: rgb(236, 243, 255);
+    width: 520px;
+    height: 250px;
+    border-radius: 25px 25px 0 0;
+    padding: 10px;
+    box-sizing: border-box;
+    text-shadow: 2px 4px 4px rgb(86, 103, 129, 1);
 }
-.body_pagina5{
-    background-color: rgb(162, 174, 241);
+.flexitem_2{
+    display: flex;
+    justify-content: center;
+    margin-right: 60px;
+    padding: 5px;
+    border: 2px solid rgb(86, 103, 129);
+    background-color: rgb(236, 243, 255);
+    width: 340px;
+    height: 250px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    object-fit: contain;
 }
-.textodepag4{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
+.flexitem_2 img{
+    width: 320px;
+    height: 200px;
+    border: 2px solid rgb(86, 103, 129);
+    background-color: rgb(236, 243, 255);
+    border-radius: 10px;
 }
-/*---------------Sobre mi---------------*/
+
+.flexitem_3{
+    margin-left: 50px;
+    margin-top: 20px;
+    display: flex;
+    border: 2px solid rgb(86, 103, 129);
+    background-color: rgb(236, 243, 255);
+    padding: 10px;
+    width: 660px;
+    height: 175px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexitem_4{
+    margin-right: 55px;
+    margin-top: 20px;
+    border: 2px solid rgb(86, 103, 129);
+    background-color: rgb(236, 243, 255);
+    width: 200px;
+    height: 120px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.flexitem_3 button{
+    height: 100px;
+    width: 100px;
+    display: inline;
+    background-color: rgb(186, 128, 240);
+    border: 2px solid rgb(153, 172, 201);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.flexitem_3 button img{
+    margin: -10px;
+}
+.flexitem_3 div{
+
+    width: 80%;
+    height: 120px;
+    margin-left: -10px;
+    padding: 15px 10px;
+}
+.flexitem_3 div input{
+    margin-left: -5px;
+    margin-top: -15px;
+    width: 525px;
+}
+/*------------------------Sobre mi--------------------------*/
 .espacio_en_blanco{
     background-color: gray;
 }
@@ -142,12 +159,12 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
     padding: 70px 0px 0px 55px;
-
+    text-shadow: 4px 6px 4px rgba(0, 0, 0, 0.5);
 }
 .about_information{
     margin: 55px 100px;
     font-size: 20px;
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
 }
 .about_knowledge{
     margin-top: 150px;
@@ -181,7 +198,7 @@
 .nav-item_paddingleft{
     margin-left: 90px;
 }
-/*-------------proyectos------------*/
+/*------------------------Proyectos--------------------------*/
 .projects_title{
     display: flex;
     justify-content: center;
@@ -189,6 +206,7 @@
     margin: 70px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 10px;
+    text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.5);
 }
 .projects_contain{
     display: grid;
@@ -203,8 +221,24 @@
     background-color: rgb(236, 243, 255);
     border-radius: 15px;
 }
-
-/*------------Media queries-------------*/
+.extra_item{
+    display: none;
+}
+/*------------------------Pagina 4 y 5--------------------------*/
+.textodepag5 {
+    color: white;
+}
+.flex_about img{
+    filter: drop-shadow(10px 10px 15px black);
+}
+.body_pagina5{
+    background-color: rgb(162, 174, 241);
+}
+.textodepag4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+/*------------------------Change boots--------------------------*/
 .responsive_nav{
     display: none;
 }
@@ -218,7 +252,6 @@
     border: 2px solid rgb(86, 103, 129);
     border-radius: 15px;
 }
-
 .nav-link_whitechange{
     color: rgb(86, 103, 129);
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
@@ -226,54 +259,84 @@
 .selected{
     color:rgb(86, 103, 129);
     font-weight: 700;
+    transition: 0.2s;
 }
 .selected:hover{
     color: black;
-    font-weight: 700;
+    font-weight: bold;
     transition: 0.2s;
 }
 .no_selected{
     color: rgb(86, 103, 129);
     font-weight: 400;
+    transition: 0.2s;
 }
 .no_selected:hover{
-    color:rgb(35, 42, 53);
-    font-weight: 400;
-    transition: 0.075s;
+    color:black;
+    transition: 0.2s;
 }
-
-
-
-
 .container_fluid_colorchange{
+    margin: auto;
+    width: 80%;
     background-color: rgb(236, 243, 255);
     border: 3px solid rgb(86, 103, 129);
     box-sizing: border-box;
     border-radius: 15px;
 }
-
+/*------------------------Media queries--------------------------*/
 @media (max-width: 992px){
+    /*------------------------Index--------------------------*/
     .container_icon{
         display: none;
         background-color: blue;
     }
+    .flex_contain{
+        margin-top: 35px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .flexitem_1{
+        margin: auto;
+        width: 80%;
+        height: 700px;
+        border-radius: 15px;
+    }
+    .flexitem_2{
+        display: none;
+    }
+    .flexitem_3{
+        display: none;
+    }
+    .flexitem_4{
+        display: none;
+    }
+    .footer_contact_index{
+        margin-top: 20px;
+    }
+    /*------------------------Sobre mi--------------------------*/
+
+
+    /*------------------------Proyectos--------------------------*/
+
+    .projects_title{
+        font-size: 50px;
+        margin-top: 50px;
+    }
+    .projects_contain{
+        margin: auto;
+        justify-content: center;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: repeat(5, 250px);
+    }
+    .extra_item{
+        display: block;
+    }
+    /*------------------------Change boots--------------------------*/
     .responsive_nav{
         display: block;
     }
-
-    .flex_contain{
-        margin-top: 25px;
-    }
-    .flexitem_1{
-        justify-content: center;
-    }
-    .flexitem_2{
-        margin-top: 50px;
-    }
-    .flex_contain{
-        display: inline-block;
-        justify-content: center;
-    }
+    
 }
 
 
