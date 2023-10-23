@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-image: linear-gradient(to bottom, #D6E1F3,#FAF9FE);
+    background-attachment: fixed;
+}
 /*------------------------Index--------------------------*/
 .text_index {
     font-size: 100px;
@@ -13,18 +17,20 @@
     float: left;
 }
 .container_icon{
-    height: 155px;
+    background-image: url('../imagenes/nav_bar.png');
+    height: 146px;
     display: flex;
     box-sizing: border-box;
-    padding: 0px;
+    padding-left: 20px;
+    margin-bottom: 30px;
 }
 .container_icon ul{
     padding: 0px;
 }
 .main_title{
     width: 300px;
-    padding: 15px 0px 0px 100px;
-    
+    margin: auto;
+    padding-left: 30px;
 }
 
 .mobile_myportfolio_title{
@@ -63,8 +69,9 @@
 /*------------------------Index flex--------------------------*/
 .flex_contain{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+    gap: 50px;
 }
 .flexitem_1{
     margin-left: 60px;
@@ -76,6 +83,20 @@
     padding: 10px;
     box-sizing: border-box;
     text-shadow: 2px 4px 4px rgb(86, 103, 129, 1);
+    overflow: hidden;
+}
+.flexitem_1_p1{
+    margin: -12px;
+    padding: 10px;
+    background-color: #EAF0FC;
+    border: 2px solid #4D5C73;
+    width: 521px;
+    overflow: hidden;
+}
+.flexitem_1_p2{
+    margin: 12px 0px;
+    padding: 13px;
+    background-color: white;
 }
 .flexitem_2{
     display: flex;
@@ -325,6 +346,9 @@
         width: 80%;
         height: 700px;
         border-radius: 15px;
+    }
+    .flexitem_1_p1{
+        display: none;
     }
     .flexitem_2{
         display: none;
