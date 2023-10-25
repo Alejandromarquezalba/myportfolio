@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="../imagenes/myfavicon.ico">
 </head>
 <body class="body_contacto">
+
     <header>
         <nav class="container_icon">
             <ul>
@@ -72,10 +73,32 @@
     </header>
     
     <main>
-      <section class="location_content" >
-        <h1>Contact</p>
-        <div></div>  
+      <section>
+        <div class="contact_content_main">
+          <h1 class="contact_title">Contact us!</h1>
+          <div class="contact_content">
+            <form class="form_mod">
+              <div class="contact_name">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input type="text" placeholder="First and Last name" class="form-control input_mod" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              </div>
+              <div class="contact_email">
+                <label for="exampleInputPassword1" class="form-label"></label>
+                <input type="email" placeholder="Email" class="form-control input_mod" id="exampleInputPassword1" required>
+              </div>
+              <div class="form-outline contact_msn">
+                <textarea class="form-control textarea_mod input_mod" placeholder="Type your message here" id="textAreaExample1" rows="4" required></textarea>
+                <label class="form-label" for="textAreaExample"></label>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn_submit_mod">Submit</button>
+            </form>  
+          </div>
+        </div>
     </main>
+        
+
+
 
     <footer class="footer_contact footer_contact_index">
       <a href="#"><img src="../imagenes/wa_icon.png" alt="whatsapp icon" class="img_footer"></a>
