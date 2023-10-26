@@ -138,6 +138,12 @@ body{
         background-image: url('../imagenes/presentation1.png');
     }
 }
+.flexitem_1_p4{
+    display: none;
+}
+.media_btn_flex3{
+    display: none;
+}
 .flexitem_2{
     display: flex;
     justify-content: center;
@@ -175,7 +181,7 @@ body{
     gap: 20px;
 }
 .flexitem3_text{
-    font-size: 2rem;
+    font-size: 20px;
     display: inline;
     justify-content: space-around;
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
@@ -187,6 +193,14 @@ body{
     display: flex;
     justify-content: space-around;
 }
+.flexitem_3_btn{
+    transition: 0.2s;
+}
+.flexitem_3_btn:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
 
 .flexitem_4{
     margin-right: 55px;
@@ -203,7 +217,6 @@ body{
     height: 100px;
     width: 100px;
     display: inline;
-    background-color: rgb(186, 128, 240);
     border: 2px solid rgb(153, 172, 201);
     border-radius: 10px;
     overflow: hidden;
@@ -457,8 +470,9 @@ body{
     .flexitem_1{
         margin: auto;
         width: 80%;
-        height: 700px;
+        height: 500px;
         border-radius: 15px;
+        align-items: center;
     }
     .flexitem_1_p1{
         display: none;
@@ -467,7 +481,15 @@ body{
         display: none;
     }
     .flexitem_1_p3{
-        display: inline;
+        display: flex;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 3rem;
+    }
+    .flexitem_1_p4{
+        display: flex;
+        margin-top: 4rem;
+        justify-content: space-around;
     }
     .flexitem_2{
         display: none;
@@ -481,6 +503,23 @@ body{
     .footer_contact_index{
         margin-top: 20px;
     }
+    .media_btn_flex3{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .media_btn_flex3 button{
+        border: 2px solid rgb(153, 172, 201);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.2s;
+    }
+    .media_btn_flex3 button:hover{
+        transform: scale(1.05);
+        transition: 0.2s;
+    }
+
     /*------------------------Sobre mi--------------------------*/
 
 
