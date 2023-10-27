@@ -1,0 +1,9 @@
+%bolsa_completa{
+    font-size: 666px;
+    color: rgb(0, 255, 0);
+
+}
+
+h5{
+    @extend %bolsa_completa;
+}

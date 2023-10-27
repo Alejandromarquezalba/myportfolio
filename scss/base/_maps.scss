@@ -1,0 +1,10 @@
+$bolsa_especifica: (
+titulito: 20px,
+decoracion: 0px,
+sombra: black,
+);
+
+
+h6{
+    font-size: map-get($bolsa_especifica, 1);
+}
