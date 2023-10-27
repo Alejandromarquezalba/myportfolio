@@ -1,5 +1,11 @@
-body h1 {
-  color: blue;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #D6E1F3, #FAF9FE);
+  background-attachment: fixed;
 }
 
 /*# sourceMappingURL=style.css.map */
