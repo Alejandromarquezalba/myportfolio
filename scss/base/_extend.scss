@@ -1,12 +1,3 @@
-%bolsa_completa{
-    font-size: 666px;
-    color: rgb(0, 255, 0);
-
-}
-h5{
-    @extend %bolsa_completa;
-}
-/*ej*/
 %hover_grow{
     transform: scale(1.1);
     transition: 0.2s;
@@ -14,7 +5,7 @@ h5{
 %transit02{
     transition: 0.2s;
 }
-h5{
-    @extend %hover_grow;
-    @extend %transit02;
+%box-si{
+    box-sizing: border-box;
 }
+

@@ -1,24 +1,12 @@
-h5 {
-  font-size: 666px;
-  color: rgb(0, 255, 0);
-}
-
-/*ej*/
-.img_footer:hover, h5 {
+.img_footer:hover {
   transform: scale(1.1);
   transition: 0.2s;
 }
 
-.no_selected:hover, .no_selected, .selected:hover, .selected, .flexitem_3_btn, .media_btn_flex3 button:hover, .img_footer, .footer_contact, .img_icon:hover, .img_icon, h5 {
+.no_selected:hover, .no_selected, .selected:hover, .selected, .flexitem_3_btn, .media_btn_flex3 button:hover, .img_footer, .footer_contact, .img_icon:hover, .img_icon {
   transition: 0.2s;
 }
 
-.clase_ejemplo {
-  color: red;
-  background-color: blue;
-}
-
-/*ejemplo*/
 /*ejemplo*/
 * {
   margin: 0;
@@ -554,7 +542,7 @@ body {
 }
 
 .carusel_container {
-  border: 3px solid rgb(86, 103, 129);
+  border: 2px solid rgb(86, 103, 129);
   border-radius: 15px;
   margin: auto;
   width: 623px;
