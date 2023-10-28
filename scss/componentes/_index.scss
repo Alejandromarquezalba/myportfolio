@@ -46,13 +46,7 @@ body{
     margin: auto;
     padding-left: 30px;
 }
-.mobile_myportfolio_title{
-    font-size: 25px;
-    transition: 0.5s;
-    color: rgb(86, 103, 129);
-    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 .footer_contact{
     display: flex;
     padding: 20px;
@@ -302,14 +296,25 @@ body{
         display: block;
     }
 }
+.icon_mobile_portfolio{
+    margin: 5px 20px;
+}
 .container_fluid_colorchange{
     margin: auto;
     width: 80%;
-    background-color: rgb(236, 243, 255);
-    border: 3px solid rgb(86, 103, 129);
+    background-color: $color-two;
+    border: 3px solid $color-one;
     box-sizing: border-box;
     border-radius: 15px;
 }
+.mobile_myportfolio_title{
+    font-size: 25px;
+    transition: 0.5s;
+    color: $color-one;
+    text-shadow: $txt-shadow;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .selected{
     color:rgb(86, 103, 129);
     font-weight: 700;
@@ -330,8 +335,8 @@ body{
     }
 }
 .nav-link_whitechange{
-    color: rgb(86, 103, 129);
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+    color: $color-one;
+    text-shadow: $txt-shadow;
 }
 .navbar_m_b{
     margin-right: 20px;

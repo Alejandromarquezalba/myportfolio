@@ -51,3 +51,27 @@
 .nav-item_paddingleft{
     margin-left: 90px;
 }
+.icon_mobile_portfolio{
+    margin: 5px 20px;
+}
+.container_fluid_colorchange{
+    margin: auto;
+    width: 80%;
+    background-color: $color-two;
+    border: 3px solid $color-one;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.mobile_myportfolio_title{
+    font-size: 25px;
+    transition: 0.5s;
+    color: $color-one;
+    text-shadow: $txt-shadow;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar_m_b{
+    margin-right: 20px;
+}
+.navbar_m{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-list-ul' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z'/%3E%3C/svg%3E%0A");
+}

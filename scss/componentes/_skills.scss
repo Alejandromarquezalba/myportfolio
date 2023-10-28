@@ -1,14 +1,36 @@
+
 .skills_content{
     h1{
         margin-top: -1rem;
+        text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+    @media (max-width: 992px){
+        margin-top: 3px;
+        font-size: 25px;
         text-shadow: $txt-shadow;
         text-align: center;
     }
 }
+
+
+
+
+
 .carusel_container{
     border: 3px solid rgb(86, 103, 129);
     border-radius: 15px;
     margin: auto;
     width: 623px;
     box-sizing: border-box;
+}
+.prev_icon_mod{
+    height: 50px;
+    width: 50px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-left-circle-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z'/%3E%3C/svg%3E%0A");
+}
+.next_icon_mod{
+    height: 50px;
+    width: 50px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-right-circle-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z'/%3E%3C/svg%3E%0A");
 }
