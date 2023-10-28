@@ -54,7 +54,7 @@ body{
     display: flex;
     padding: 20px;
     justify-content: center;
-    margin: 80px auto;
+    margin: 80px;
     gap: 75px;
     width: 80%;
     border: 2px solid rgb(86, 103, 129);
@@ -286,7 +286,6 @@ body{
     margin-top: 3rem;
     gap: 50px;
 }
-
 .about_subtitle{
     text-align: center;
     font-size: 40px;

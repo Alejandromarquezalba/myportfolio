@@ -3,7 +3,17 @@
     color: rgb(0, 255, 0);
 
 }
+%hover_grow{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+%disp_none{
+    display: none;
+}
+
 
 h5{
     @extend %bolsa_completa;
+    @extend %hover_grow;
+    @extend %disp_none;
 }
