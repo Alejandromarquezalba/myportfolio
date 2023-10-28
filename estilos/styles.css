@@ -240,7 +240,6 @@ body{
     background-color: gray;
 }
 .flex_about img{
-
     filter: drop-shadow(10px 10px 15px black);
 }
 .flex_about{

@@ -1,16 +1,58 @@
+.skills_content h1 {
+  margin-top: -1rem;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.carusel_container {
+  border: 3px solid rgb(86, 103, 129);
+  border-radius: 15px;
+  margin: auto;
+  width: 623px;
+  box-sizing: border-box;
+}
+
+.projects_title {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  margin: 70px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 10px;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.projects_contain {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 250px 250px 250px;
+  gap: 55px 35px;
+}
+
+.projects_item {
+  border: 2px solid rgb(86, 103, 129);
+  background-color: rgb(236, 243, 255);
+  filter: drop-shadow(5px 5px 5px rgb(86, 103, 129));
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.projects_item:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+.extra_item {
+  display: none;
+}
+
 .espacio_en_blanco {
   background-color: gray;
 }
 
 .flex_about img {
   filter: drop-shadow(10px 10px 15px black);
-}
-
-.flex_about {
-  display: flex;
-  justify-content: space-around;
-  height: 200px;
-  margin: 50px 125px;
 }
 
 .flex_about {
