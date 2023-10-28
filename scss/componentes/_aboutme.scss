@@ -7,7 +7,7 @@
     }
 }
 .flex_about{
-    display: flex;
+    display: map-get($group, dpflex);
     justify-content: space-around;
     height: 200px;
     margin: 50px 125px;
@@ -28,7 +28,7 @@
     margin-top: 5rem;
 }
 .about_knowledge_2{
-    display: flex;
+    display: map-get($group, dpflex);
     justify-content: center;
     margin-top: 3rem;
     gap: 50px;

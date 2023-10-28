@@ -7,7 +7,14 @@
   transition: 0.2s;
 }
 
-/*ejemplo*/
+.container_fluid_colorchange, .flexitem_4, .flexitem_3, .flexitem_2, .flexitem_1, .footer_contact, .img_icon, .container_icon {
+  box-sizing: border-box;
+}
+
+.responsive_nav, .media_btn_flex3, .flexitem_1_p4, .flexitem_1_p3 {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +34,6 @@ body {
   background-image: url("../imagenes/nav_bar.png");
   height: 146px;
   display: flex;
-  box-sizing: border-box;
   padding-left: 20px;
   margin-bottom: 30px;
 }
@@ -47,7 +53,6 @@ body {
 .img_icon {
   padding: 5px;
   margin: 20px;
-  box-sizing: border-box;
 }
 .img_icon:hover {
   transform: scale(1.1);
@@ -68,8 +73,7 @@ body {
   width: 80%;
   border: 2px solid rgb(86, 103, 129);
   background-color: rgb(236, 243, 255);
-  border-radius: 15px;
-  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .flex_contain {
@@ -95,7 +99,6 @@ body {
   height: 250px;
   border-radius: 15px 15px 0 0;
   padding: 10px;
-  box-sizing: border-box;
   text-shadow: 2px 4px 4px rgb(86, 103, 129);
   overflow: hidden;
 }
@@ -132,9 +135,6 @@ body {
   }
 }
 
-.flexitem_1_p3 {
-  display: none;
-}
 @media (max-width: 992px) {
   .flexitem_1_p3 {
     display: flex;
@@ -174,9 +174,6 @@ body {
   }
 }
 
-.flexitem_1_p4 {
-  display: none;
-}
 @media (max-width: 992px) {
   .flexitem_1_p4 {
     display: flex;
@@ -185,9 +182,6 @@ body {
   }
 }
 
-.media_btn_flex3 {
-  display: none;
-}
 @media (max-width: 992px) {
   .media_btn_flex3 {
     display: flex;
@@ -218,7 +212,6 @@ body {
   width: 340px;
   height: 250px;
   border-radius: 10px;
-  box-sizing: border-box;
   object-fit: contain;
 }
 @media (max-width: 992px) {
@@ -244,7 +237,6 @@ body {
   width: 620px;
   height: 120px;
   border-radius: 10px;
-  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
@@ -279,7 +271,6 @@ body {
   width: 200px;
   height: 120px;
   border-radius: 15px;
-  box-sizing: border-box;
   overflow: hidden;
 }
 @media (max-width: 992px) {
@@ -323,9 +314,6 @@ body {
 }
 
 /*-------------Responsive----------------*/
-.responsive_nav {
-  display: none;
-}
 @media (max-width: 992px) {
   .responsive_nav {
     display: block;
@@ -341,7 +329,6 @@ body {
   width: 80%;
   background-color: rgb(236, 243, 255);
   border: 3px solid rgb(86, 103, 129);
-  box-sizing: border-box;
   border-radius: 15px;
 }
 

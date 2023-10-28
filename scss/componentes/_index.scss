@@ -14,8 +14,8 @@ body{
 .container_icon{
     background-image: url('../imagenes/nav_bar.png');
     height: 146px;
-    display: flex;
-    box-sizing: border-box;
+    display: map-get($group, dpflex);
+    @extend %box-si;
     padding-left: 20px;
     margin-bottom: 30px;
     @media (max-width: 992px){
@@ -33,7 +33,7 @@ body{
 .img_icon{
     padding: 5px;
     margin: 20px;
-    box-sizing: border-box;
+    @extend %box-si;
     @extend %transit02;
     &:hover{
         transform: scale(1.1);
@@ -48,7 +48,7 @@ body{
 }
 
 .footer_contact{
-    display: flex;
+    display: map-get($group, dpflex);
     padding: 20px;
     justify-content: center;
     margin: 80px;
@@ -56,8 +56,8 @@ body{
     width: 80%;
     border: $brdr;
     background-color: $color-two;
-    border-radius: 15px;
-    box-sizing: border-box;
+    border-radius: map-get($group, radio10);
+    @extend %box-si;
     @extend %transit02;
 }
 .img_footer{
@@ -67,7 +67,7 @@ body{
     }
 }
 .flex_contain{
-    display: flex;
+    display: map-get($group, dpflex);
     justify-content: space-evenly;
     margin-bottom: 0px;
     gap: 50px;
@@ -86,7 +86,7 @@ body{
     height: 250px;
     border-radius: 15px 15px 0 0;
     padding: 10px;
-    box-sizing: border-box;
+    @extend %box-si;
     text-shadow: 2px 4px 4px rgb(86, 103, 129, 1);
     overflow: hidden;
     @media (max-width: 992px){
@@ -117,7 +117,7 @@ body{
     }
 }
 .flexitem_1_p3{
-    display: none;
+    @extend %d-none;
     @media (max-width: 992px){
         display: flex;
         text-align: center;
@@ -155,7 +155,7 @@ body{
     }
 }
 .flexitem_1_p4{
-    display: none;
+    @extend %d-none;
     @media (max-width: 992px){
         display: flex;
         margin-top: 4rem;
@@ -163,7 +163,7 @@ body{
     }
 }
 .media_btn_flex3{
-    display: none;
+    @extend %d-none;
     @media (max-width: 992px){
         display: flex;
         justify-content: space-around;
@@ -173,7 +173,7 @@ body{
     button{
         @media (max-width: 992px){
             border: 2px solid rgb(153, 172, 201);
-            border-radius: 10px;
+            border-radius: map-get($group, radio10);
             overflow: hidden;
             transition: 0.2s;
         }
@@ -184,7 +184,7 @@ body{
     }
 }
 .flexitem_2{
-    display: flex;
+    display: map-get($group, dpflex);
     justify-content: center;
     margin-right: 60px;
     padding: 5px;
@@ -192,8 +192,8 @@ body{
     background-color: $color-two;
     width: 340px;
     height: 250px;
-    border-radius: 10px;
-    box-sizing: border-box;
+    border-radius: map-get($group, radio10);
+    @extend %box-si;
     object-fit: contain;
     @media (max-width: 992px){
         display: none;
@@ -203,20 +203,20 @@ body{
         height: 200px;
         border: $brdr;
         background-color: $color-two;
-        border-radius: 10px;
+        border-radius: map-get($group, radio10);
     }
 }
 .flexitem_3{
     margin-left: 50px;
     margin-top: 20px;
-    display: flex;
+    display: map-get($group, dpflex);
     border: $brdr;
     background-color: $color-two;
     padding: 10px;
     width: 620px;
     height: 120px;
-    border-radius: 10px;
-    box-sizing: border-box;
+    border-radius: map-get($group, radio10);
+    @extend %box-si;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
@@ -231,7 +231,7 @@ body{
     margin-right: 20px;
 }
 .flexitem_3_div{
-    display: flex;
+    display: map-get($group, dpflex);
     justify-content: space-around;
 }
 .flexitem_3_btn{
@@ -248,8 +248,8 @@ body{
     background-color: $color-two;
     width: 200px;
     height: 120px;
-    border-radius: 15px;
-    box-sizing: border-box;
+    border-radius: map-get($group, radio15);
+    @extend %box-si;
     overflow: hidden;
     @media (max-width: 992px){
         display: none;
@@ -261,7 +261,7 @@ body{
         width: 100px;
         display: inline;
         border: 2px solid rgb(153, 172, 201);
-        border-radius: 10px;
+        border-radius: map-get($group, radio10);
         overflow: hidden;
         img{
             margin: -10px;
@@ -289,7 +289,7 @@ body{
 }
 /*-------------Responsive----------------*/
 .responsive_nav{
-    display: none;
+    @extend %d-none;
     @media (max-width: 992px){
         display: block;
     }
@@ -302,7 +302,7 @@ body{
     width: 80%;
     background-color: $color-two;
     border: 3px solid $color-one;
-    box-sizing: border-box;
+    @extend %box-si;
     border-radius: 15px;
 }
 .mobile_myportfolio_title{

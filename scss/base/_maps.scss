@@ -1,9 +1,11 @@
-$bolsa_especifica: (
-titulito: 20px,
-decoracion: 0px,
-sombra: black,
+$group: (
+    sombraclara: 2px 4px 4px rgb(86, 103, 129, 1),
+    hidenone: none,
+    radio10: 10px,
+    radio15: 15px,
+    dpflex: flex,
 );
-h6{
-    font-size: map-get($bolsa_especifica, 1);
-}
-/*ejemplo*/
+
+
+
+

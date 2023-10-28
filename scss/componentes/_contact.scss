@@ -30,7 +30,7 @@
     margin-top: -3rem;
 }
 .form_mod{
-    display: flex;
+    display: map-get($group, dpflex);
     flex-wrap: wrap;
     justify-content: space-around;
 }
