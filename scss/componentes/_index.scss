@@ -51,14 +51,21 @@ body{
     display: map-get($group, dpflex);
     padding: 20px;
     justify-content: center;
-    margin: 80px;
-    gap: 75px;
+    margin: 2rem auto;
     width: 80%;
+    gap: 75px;
     border: $brdr;
     background-color: $color-two;
     border-radius: map-get($group, radio10);
     @extend %box-si;
     @extend %transit02;
+    @media (max-width: 992px){
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        width: 80%;
+        gap: 25px;
+    }
 }
 .img_footer{
     @extend %transit02;
@@ -207,14 +214,14 @@ body{
     }
 }
 .flexitem_3{
-    margin-left: 50px;
-    margin-top: 20px;
+    margin: 2rem auto;
+
     display: map-get($group, dpflex);
     border: $brdr;
     background-color: $color-two;
     padding: 10px;
-    width: 620px;
-    height: 120px;
+    width: 80%;
+    height: 10rem;
     border-radius: map-get($group, radio10);
     @extend %box-si;
     justify-content: space-between;
@@ -282,11 +289,7 @@ body{
         display: none;
     }
 }
-.footer_contact_index{
-    @media (max-width: 992px){
-        margin-top: 20px;
-    }
-}
+
 /*-------------Responsive----------------*/
 .responsive_nav{
     @extend %d-none;

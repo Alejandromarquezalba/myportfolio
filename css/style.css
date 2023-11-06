@@ -68,12 +68,21 @@ body {
   display: flex;
   padding: 20px;
   justify-content: center;
-  margin: 80px;
-  gap: 75px;
+  margin: 2rem auto;
   width: 80%;
+  gap: 75px;
   border: 2px solid rgb(86, 103, 129);
   background-color: rgb(236, 243, 255);
   border-radius: 10px;
+}
+@media (max-width: 992px) {
+  .footer_contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 80%;
+    gap: 25px;
+  }
 }
 
 .flex_contain {
@@ -228,14 +237,13 @@ body {
 }
 
 .flexitem_3 {
-  margin-left: 50px;
-  margin-top: 20px;
+  margin: 2rem auto;
   display: flex;
   border: 2px solid rgb(86, 103, 129);
   background-color: rgb(236, 243, 255);
   padding: 10px;
-  width: 620px;
-  height: 120px;
+  width: 80%;
+  height: 10rem;
   border-radius: 10px;
   justify-content: space-between;
   align-items: center;
@@ -307,12 +315,6 @@ body {
   }
 }
 
-@media (max-width: 992px) {
-  .footer_contact_index {
-    margin-top: 20px;
-  }
-}
-
 /*-------------Responsive----------------*/
 @media (max-width: 992px) {
   .responsive_nav {
@@ -379,16 +381,29 @@ body {
 
 .flex_about {
   display: flex;
-  justify-content: space-around;
-  height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
   margin: 50px 125px;
 }
 .flex_about h1 {
-  width: 50%;
+  text-align: start;
   font-family: "Franklin Gothic Medium";
-  font-size: 50px;
-  padding: 70px 0px;
+  font-size: 4rem;
   text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 992px) {
+  .flex_about {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+  }
+  .flex_about h1 {
+    height: 50px;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0px;
+  }
 }
 
 .about_information {
@@ -396,9 +411,20 @@ body {
   font-size: 20px;
   text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 992px) {
+  .about_information {
+    margin: auto;
+    width: 90%;
+  }
+}
 
 .about_knowledge_1 {
   margin-top: 5rem;
+}
+@media (max-width: 992px) {
+  .about_knowledge_1 {
+    margin-top: 2rem;
+  }
 }
 
 .about_knowledge_2 {
@@ -407,12 +433,24 @@ body {
   margin-top: 3rem;
   gap: 50px;
 }
+@media (max-width: 992px) {
+  .about_knowledge_2 {
+    margin: 2rem 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .about_subtitle {
   text-align: center;
-  font-size: 40px;
+  font-size: 3rem;
   grid-area: about_subtitle;
   text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 992px) {
+  .about_subtitle {
+    font-size: 2rem;
+  }
 }
 
 .about_img1 {
@@ -564,7 +602,7 @@ body {
 }
 @media (max-width: 992px) {
   .contact_content_main {
-    margin-top: 20px;
+    margin: 20px 10px;
   }
 }
 

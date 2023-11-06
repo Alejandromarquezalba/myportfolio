@@ -8,36 +8,62 @@
 }
 .flex_about{
     display: map-get($group, dpflex);
-    justify-content: space-around;
-    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
     margin: 50px 125px;
     h1{
-        width: 50%;
+        text-align: start;
         font-family: nth($long, 4);
-        font-size: 50px;
-        padding: 70px 0px;
+        font-size: 4rem;
         text-shadow: $txt-shadow;
+    }
+    @media (max-width: 992px){
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2rem auto;
+        h1{
+            height: 50px;
+            font-size: 2rem;
+            text-align: center;
+            padding: 0px;
+        }
     }
 }
 .about_information{
     margin: 55px 100px;
     font-size: 20px;
     text-shadow: $txt-shadow;
+    @media (max-width: 992px){
+        margin: auto;
+        width: 90%;
+    }
 }
 .about_knowledge_1{
     margin-top: 5rem;
+    @media (max-width: 992px){
+        margin-top: 2rem;
+    }
 }
 .about_knowledge_2{
     display: map-get($group, dpflex);
     justify-content: center;
     margin-top: 3rem;
     gap: 50px;
+    @media (max-width: 992px){
+        margin: 2rem 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 .about_subtitle{
     text-align: center;
-    font-size: 40px;
+    font-size: 3rem;
     grid-area: about_subtitle;
     text-shadow: $txt-shadow;
+    @media (max-width: 992px){
+        font-size: 2rem;
+    }
 }
 .about_img1{
     grid-area: about_img;
