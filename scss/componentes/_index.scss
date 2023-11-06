@@ -3,7 +3,6 @@
     padding: 0;
 }
 body{
-    background-image: red;
     background-attachment: fixed;
 }
 .text_index {
@@ -60,7 +59,7 @@ body{
     @extend %box-si;
     @extend %transit02;
     @media (max-width: 992px){
-        margin: 0px auto 2rem auto;
+        margin: 0px auto 1rem auto;
         gap: 35px;
         display: flex;
         flex-wrap: wrap;
