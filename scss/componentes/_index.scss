@@ -60,6 +60,7 @@ body{
     @extend %box-si;
     @extend %transit02;
     @media (max-width: 992px){
+        margin: 0px auto 2rem auto;
         gap: 35px;
         display: flex;
         flex-wrap: wrap;
@@ -80,7 +81,7 @@ body{
     margin-bottom: 0px;
     gap: 50px;
     @media (max-width: 992px){
-        margin-top: 35px;
+        
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
@@ -95,16 +96,16 @@ body{
     border: $brdr;
     background-color: $color-two;
     width: 520px;
-    height: 250px;
+    
     border-radius: 15px 15px 0 0;
     padding: 10px;
     @extend %box-si;
     text-shadow: 2px 4px 4px rgb(86, 103, 129, 1);
     overflow: hidden;
     @media (max-width: 992px){
-        margin: auto;
+        margin: 2rem auto;
         width: 80%;
-        height: 500px;
+        
         border-radius: 15px;
         align-items: center;
     }
@@ -167,11 +168,14 @@ body{
     }
 }
 .flexitem_1_p4{
+    
     @extend %d-none;
     @media (max-width: 992px){
         display: flex;
-        margin-top: 4rem;
+        flex-wrap: wrap;
+        margin-top: 2rem;
         justify-content: space-around;
+        gap: 15px;
     }
 }
 .media_btn_flex3{
@@ -180,7 +184,7 @@ body{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-top: 3rem;
+        margin: 2rem;
     }
     button{
         @media (max-width: 992px){
@@ -302,6 +306,7 @@ body{
         display: block;
     }
 }
+/*-----------------arreglo de media nav--------------------*/
 .mobile_myportfolio_title{
     margin: auto;
     display: flex;
@@ -311,6 +316,14 @@ body{
     color: $color-one;
     text-shadow: $txt-shadow;
     gap: 15px;
+}
+.container_fluid_colorchange{
+    margin: auto;
+    width: 80%;
+    background-color: $color-two;
+    border: 3px solid $color-one;
+    @extend %box-si;
+    border-radius: 15px;
 }
 .icon_mobile_portfolio{
     margin: 5px auto 0px auto;
@@ -328,15 +341,9 @@ body{
 .nav_options_paddingleft{
     margin-left: -20px;
 }
+/*-----------------arreglo de media nav--------------------*/
 
-.container_fluid_colorchange{
-    margin: auto;
-    width: 80%;
-    background-color: $color-two;
-    border: 3px solid $color-one;
-    @extend %box-si;
-    border-radius: 15px;
-}
+
 
 
 .selected{
