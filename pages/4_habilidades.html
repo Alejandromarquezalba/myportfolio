@@ -72,57 +72,53 @@
           </nav>
     </header>
     
-    <main>
-        <section class="skills_content" ><h1>Certificates</h1></section>
+  <main>
+    <section class="skills_content" ><h1>Certificates</h1></section>
         <!--Certificados-->
         
-
-        <div class="container">
-          <div class="row">
-            <div>
-
+        <!--carusel-->
+        <div id="carouselExample" class="carousel slide carusel_contenedor_general">
+          <div class="carousel-inner carusel_container">
+            <div class="carousel-item active">
+              <img src="../imagenes/certif_tst2.png" class="d-block w-100" alt="montañas con lago">
+              <div class="text_carusel">
+                <p>[parrafo largo de ejemplo] Este espacio está destinado a colocar información del próximo certificado que obtenga a medida que avance de curso en curso, y arriba de este texto, justo en la imagen, hay una imagen genérica, la cual será reemplazada para colocar en ella otro certificado o titulo en cuestión, esta información es innecesariamente larga para que quede comprobada la efectividad del scroll y como se vería en mobile para evitar que el contenedor se rompa y mantenga una buena apariencia tanto en desktop como en mobile y al lector le resulte cómoda la lectura, a modo de ejemplo con toda esta información estoy colocando una información innecesariamente larga para comprobar la efectividad de la caja que contendrá dicha información ya sea corta o larga, la siguiente será más corta y la última (la única que tiene un certitificado real de ejemplo) será intermedia.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../imagenes/certif_tst1.png" class="d-block w-100" alt="red informatica">
+              <div class="text_carusel">
+                <p>[parrafo corto de ejemplo]Como dijo el anterior párrafo, esta información del certificado 2 será más corta y el siguiente un poquito más largo.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../imagenes/certif_tst.png" class="d-block w-100 carusel_item_borde" alt="certificado de Coderhouse">
+              <div class="text_carusel">
+                <p>[parrafo mediano de ejemplo] Certificado obtenido de la Escuela de habilidades digitales de CoderHouse, con clases online en vivo. Coderhouse tiene cursos y carreras online de diseño ux, community manager, publicidad en redes, programación, ecommerce, data analytics y más. Las clases son virtuales, pero igualmente quedan grabadas en la plataforma virtual.</p>
+              </div>
+              
             </div>
           </div>
+
+          <!--btn_prev-->
+          <button class="carousel-control-prev btn_prev_mipadding" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon prev_icon_mod" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <!--btn_prev-->
+          <button class="carousel-control-next btn_next_mipadding" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon next_icon_mod" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
-
-
-
-            <div id="carouselExample" class="carousel slide">
-              <div class="carousel-inner carusel_container">
-                <div class="carousel-item active">
-                  <img src="../imagenes/certif_tst2.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="../imagenes/certif_tst1.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="../imagenes/certif_tst.png" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon prev_icon_mod" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon next_icon_mod" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-              </button>
-            </div>
-          
-
-        
-
-
-
-
-    </main>
+  </main>
 
     <footer class="footer_contact footer_contact_index">
       <a href="#"><img src="../imagenes/wa_icon.png" alt="whatsapp icon" class="img_footer"></a>
       <a href="#"><img src="../imagenes/l_icon.png" alt="linkedin icon" class="img_footer"></a>
       <a href="#"><img src="../imagenes/i_icon.png" alt="instagram icon" class="img_footer"></a>
       <a href="#"><img src="../imagenes/gh_icon.png" alt="github icon" class="img_footer"></a>
-  </footer>
+    </footer>
 
     <!--Script de bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

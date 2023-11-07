@@ -526,21 +526,23 @@ body {
 }
 @media (max-width: 992px) {
   .projects_title {
-    font-size: 3rem;
-    margin: 4rem;
+    font-size: 2rem;
+    margin: 1rem;
   }
 }
 
 .projects_contain {
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   width: 90%;
   padding: 20px;
+  justify-content: space-evenly;
   gap: 55px 35px;
 }
 @media (max-width: 992px) {
   .projects_contain {
-    padding: 10px;
+    padding: 15px 15px 35px 15px;
   }
 }
 
@@ -589,7 +591,8 @@ body {
   border: 2px solid rgb(86, 103, 129);
   border-radius: 15px;
   margin: auto;
-  width: 623px;
+  width: 80%;
+  height: 80%;
   box-sizing: border-box;
 }
 
@@ -597,12 +600,51 @@ body {
   height: 50px;
   width: 50px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-left-circle-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z'/%3E%3C/svg%3E%0A");
+  filter: drop-shadow(0px 0px 3px white);
 }
 
 .next_icon_mod {
   height: 50px;
   width: 50px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-right-circle-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z'/%3E%3C/svg%3E%0A");
+  filter: drop-shadow(0px 0px 3px white);
+}
+
+.text_carusel {
+  height: 150px;
+  overflow: auto;
+}
+.text_carusel p {
+  font-size: 20px;
+  padding: 10px;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 992px) {
+  .text_carusel p {
+    font-size: 16px;
+  }
+}
+
+.carusel_item_borde {
+  border: 2px solid rgb(86, 103, 129);
+  overflow: hidden;
+}
+
+.btn_prev_mipadding {
+  margin-left: 4rem;
+}
+
+.btn_next_mipadding {
+  margin-right: 4rem;
+}
+
+.carusel_contenedor_general {
+  padding-top: 20px;
+}
+@media (max-width: 992px) {
+  .carusel_contenedor_general {
+    padding-bottom: 30px;
+  }
 }
 
 .body_contacto {
