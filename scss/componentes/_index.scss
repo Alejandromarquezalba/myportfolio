@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: linear-gradient(to right, #0ee9ef, #edbf65);
-
+.body_pag{
+    background-image: linear-gradient($color-one, $color-two);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
 }
 .text_index {
     font-size: 100px;
@@ -51,7 +53,7 @@ body{
     display: map-get($group, dpflex);
     padding: 20px;
     justify-content: center;
-    margin: 3rem auto;
+    margin: 3rem auto 3rem auto;
     gap: 75px;
     width: 80%;
     border: $brdr;
@@ -89,10 +91,6 @@ body{
     }
 }
 
-
-
-
-
 .flexitem_1_p1{
     margin: -12px;
     padding: 10px;
@@ -112,6 +110,30 @@ body{
         display: none;
     }
 }
+.intro{
+    span{
+    display: block;
+    font-family: monospace;
+    align-items: center;
+    border-right: 3px solid ;
+    width: 34ch;
+    overflow: hidden;
+    font-size: 27px;
+    white-space: nowrap;
+    animation: typing 2s steps(34), blink .5s infinite step-end alternate;
+    @keyframes typing {
+        from {width: 0}
+    }
+    @keyframes blink {
+        50%{ border-color: transparent}
+    }
+    }
+    
+}
+
+
+
+
 .flexitem_1_p3{
     @extend %d-none;
     @media (max-width: 992px){
@@ -121,35 +143,7 @@ body{
         margin-top: 3rem;
     }
 }
-.flexitem_1_img{
-    margin-top: 2rem;
-    animation-name: intro;
-    animation-iteration-count: infinite;
-    animation-duration: 12s;
-    @keyframes intro {
-        0%{
-            background-image: url('../imagenes/presentation1.png');
-        }
-        30%{
-            background-image: url('../imagenes/presentation1.png');
-        }
-        35%{
-            background-image: url('../imagenes/presentation2.png');
-        }
-        60%{
-            background-image: url('../imagenes/presentation2.png');
-        }
-        65%{
-            background-image: url('../imagenes/presentation3.png');
-        }
-        95%{
-            background-image: url('../imagenes/presentation3.png');
-        }
-        100%{
-            background-image: url('../imagenes/presentation1.png');
-        }
-    }
-}
+
 .flexitem_1_p4{
     
     @extend %d-none;

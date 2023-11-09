@@ -26,8 +26,11 @@
 .projects_item{
     height: 250px;
     width: 250px;
+    align-items: center;
     border: 2px solid $color-one;
     background-color: $color-two;
+    overflow: hidden;
+    
     filter: drop-shadow(5px 5px 5px $color-one);
     border-radius: 15px;
     transition: 0.5s;
